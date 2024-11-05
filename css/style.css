@@ -1,0 +1,99 @@
+/* font-family: "Montserrat", sans-serif; */
+@font-face {
+  font-family: "Benzin";
+  src: url(../fonts/Benzin.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+:root {
+  --color-text: #1f1f1f;
+  --color-bg: #f1f2f6;
+  --size-h3: 32px;
+  --size-text: 20px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: var(--size-text);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: 1352px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rules {
+  padding: 120px 0;
+}
+
+.title {
+  font-family: "Benzin";
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 56px;
+}
+
+.rules__content {
+  padding: 0 48px;
+}
+
+.rules__list,
+.rules-point__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.rules__list {
+  list-style: none;
+  padding: 0;
+}
+
+.rules-point__list {
+  list-style-type: disc;
+  padding-left: 32px;
+}
+
+.item__wrap {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.rules__number {
+  width: 40px;
+  height: 40px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.rules__heading {
+  width: 1004px;
+  margin-right: 16px;
+}
+
+.rules__title {
+  font-size: var(--size-h3);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.rules__icon {
+  max-width: 124px;
+}
